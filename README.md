@@ -10,7 +10,6 @@ If you find this repo useful for your research, please consider citing the paper
 ```
 @inproceedings{AGMM_SASS,
   author={Wu, Linshan and Zhong, Zhun and Fang, Leyuan and He, Xingxin and Liu, Qiang and Ma, Jiayi and Chen, Hao},
-  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence}, 
   booktitle={CVPR},
   year={2023}
   }
