@@ -1,0 +1,25 @@
+# arguments for dataset
+dataset: pascal
+nclass: 21
+crop_size: 321
+aug: True
+data_root: Pascal
+mode: 'point'
+
+# arguments for training
+epochs: 80
+batch_size: 16
+lr: 0.001  # 4GPUs
+lr_multi: 10.0
+criterion:
+  name: CELoss
+  kwargs:
+    ignore_index: 255
+conf_thresh: 0.95
+
+# arguments for model
+aux: False
+backbone: resnet101
+multi_grid: False
+replace_stride_with_dilation: [False, True, True]
+dilations: [6, 12, 18]
