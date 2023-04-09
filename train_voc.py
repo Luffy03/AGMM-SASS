@@ -107,14 +107,13 @@ def main():
             seg_loss = loss_calc(pred, mask,
                                  ignore_index=cfg['nclass'], multi=False,
                                  class_weight=use_weight, ohem=ohem)
-            cls_loss = get_cls_loss(pred, cls_label, mask)
 
             # Gaussian
             cur_cls_label = build_cur_cls_label(mask, cfg['nclass'])
             pred_cl = clean_mask(pred, cls_label, True)
             vecs, proto_loss = cal_protypes(feat, mask, cfg['nclass'])
             res = GMM(feat, vecs, pred_cl, mask, cur_cls_label)
-            gmm_loss = cal_gmm_loss(pred.softmax(1), res, cur_cls_label, mask) + proto_loss + cls_loss
+            gmm_loss = cal_gmm_loss(pred.softmax(1), res, cur_cls_label, mask) + proto_loss
 
             # total loss
             loss = seg_loss + gmm_loss
