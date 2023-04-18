@@ -69,7 +69,11 @@ def main(args):
                 pred = pre_slide(model, img, num_classes=cfg['nclass'],
                                  tile_size=(cfg['crop_size'], cfg['crop_size']), tta=False)
             else:
-                pred = ms_test(model, img)
+                oh, ow = img.size()[-2:]
+                input = F.interpolate(img, size=(cfg['crop_size'], cfg['crop_size']), mode='bilinear')
+                # pred = model(input)
+                pred = ms_test(model, input)
+                pred = F.interpolate(pred, size=(oh, ow), mode='bilinear')
 
             pred = torch.argmax(pred, dim=1)
 
