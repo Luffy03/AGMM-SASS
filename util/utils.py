@@ -252,10 +252,7 @@ def evaluate(model, loader, mode, cfg):
                     img = img[:, :, start_h:start_h + cfg['crop_size'], start_w:start_w + cfg['crop_size']]
                     mask = mask[:, start_h:start_h + cfg['crop_size'], start_w:start_w + cfg['crop_size']]
 
-                oh, ow = img.size()[-2:]
-                input = F.interpolate(img, size=(cfg['crop_size'], cfg['crop_size']), mode='bilinear')
-                pred = model(input)
-                pred = F.interpolate(pred, size=(oh, ow), mode='bilinear').argmax(dim=1)
+                pred = model(img).argmax(1)
 
             metric.add_batch(pred.cpu().numpy(), mask.numpy())
 
