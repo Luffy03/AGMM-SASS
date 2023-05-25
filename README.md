@@ -11,8 +11,10 @@ If you find this repo useful for your research, please consider citing the paper
 @inproceedings{AGMM,
   title={Sparsely Annotated Semantic Segmentation with Adaptive Gaussian Mixtures},
   author={Wu, Linshan and Zhong, Zhun and Fang, Leyuan and He, Xingxin and Liu, Qiang and Ma, Jiayi and Chen, Hao},
-  booktitle={CVPR},
-  year={2023}
+  booktitle={IEEE Conf. Comput. Vis. Pattern Recog.},
+  month={June},
+  year={2023},
+  pages={15454-15464}
   }
 ```
 
