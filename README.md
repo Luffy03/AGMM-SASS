@@ -15,6 +15,8 @@ class. Inspired by this, we propose a novel SASS framework, which is equipped wi
 ### Download weak labels
 - Pascal: [points](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/VOCtrainval_11-May-2012.tar) | [scribbles](https://drive.google.com/file/d/1ikrDlsai5QSf2GiSUR3f8PZUzyTubcuF/view?usp=sharing)
 - Cityscapes: [points](https://www.cityscapes-dataset.com/file-handling/?packageID=3)
+
+Note: points and scribbles for pascal are downloaded from [TEL] (https://github.com/megvii-research/TreeEnergyLoss)
 ```
 ├── [Your Pascal Path]
     ├── JPEGImages
