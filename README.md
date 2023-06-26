@@ -43,6 +43,7 @@ class. Inspired by this, we propose a novel SASS framework, which is equipped wi
 train
 ```bash 
 sh scripts/train_voc.sh <num_gpu> <port>
+sh scripts/train_city.sh <num_gpu> <port>
 ```
 eval
 ```bash 
