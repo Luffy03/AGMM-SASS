@@ -3,7 +3,27 @@ Code for CVPR2023 paper, [**"Sparsely Annotated Semantic Segmentation with Adapt
 
 Authors: Linshan Wu, <a href="https://scholar.google.com/citations?user=nZizkQ0AAAAJ&hl">Zhun Zhong</a>, <a href="https://scholar.google.com/citations?hl=en&user=Gfa4nasAAAAJ">Leyuan Fang</a>, <a href="https://scholar.google.com/citations?hl=zh-CN&user=bHSKDuYAAAAJ">Xingxin He</a>, Qiang Liu, <a href="https://scholar.google.com/citations?hl=zh-CN&user=73trMQkAAAAJ">Jiayi Ma</a>, and <a href="https://scholar.google.com/citations?hl=en&user=Z_t5DjwAAAAJ">Hao Chen</a>
 
-Comming soon
+## Abstract
+Sparsely annotated semantic segmentation (SASS) aims to learn a segmentation model by images with sparse labels (i.e., points or scribbles). Existing methods mainly focus on introducing low-level affinity or generating pseudo labels to strengthen supervision, while largely ignoring the inherent relation between labeled and unlabeled pixels. In this paper, we observe that pixels that are close to each other in the feature space are more likely to share the same
+class. Inspired by this, we propose a novel SASS framework, which is equipped with an Adaptive Gaussian Mixture Model (AGMM). Our AGMM can effectively endow reliable supervision for unlabeled pixels based on the distributions of labeled and unlabeled pixels. Specifically, we first build Gaussian mixtures using labeled pixels and their relatively similar unlabeled pixels, where the labeled pixels act as centroids, for modeling the feature distribution of each class. Then, we leverage the reliable information from labeled pixels and adaptively generated GMM predictions to supervise the training of unlabeled pixels, achieving online, dynamic, and robust self-supervision. In addition, by capturing category-wise Gaussian mixtures, AGMM encourages the model to learn discriminative class decision boundaries in an end-to-end contrastive learning manner. Experimental results conducted on the PASCAL VOC 2012 and Cityscapes datasets demonstrate that our AGMM can establish new state-of-the-art SASS performance.
+
+## Getting Started
+### Prepare Dataset
+- Pascal: [JPEGImages](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/VOCtrainval_11-May-2012.tar) | [SegmentationClass](https://drive.google.com/file/d/1ikrDlsai5QSf2GiSUR3f8PZUzyTubcuF/view?usp=sharing)
+- Cityscapes: [leftImg8bit](https://www.cityscapes-dataset.com/file-handling/?packageID=3) | [gtFine](https://drive.google.com/file/d/1E_27g9tuHm6baBqcA7jct_jqcGA89QPm/view?usp=sharing)
+
+├── [Your Pascal Path]
+    ├── JPEGImages
+    └── SegmentationClass
+    
+├── [Your Cityscapes Path]
+    ├── leftImg8bit
+    └── gtFine
+### Pretrained Backbone:
+```
+├── ./pretrained
+    ├── resnet50.pth
+    └── resnet101.pth
 
 ## Citation ✏️ 📄
 If you find this repo useful for your research, please consider citing the paper as follows:
