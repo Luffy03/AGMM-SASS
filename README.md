@@ -26,6 +26,9 @@ Note: points and scribbles for pascal are downloaded from [TEL](https://github.c
     
 ├── [Your Cityscapes Path]
     ├── leftImg8bit
+    ├── 20clicks
+    ├── 50clicks
+    ├── 100clicks
     └── gtFine
 ```
 ### Pretrained Backbone:
