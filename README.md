@@ -39,6 +39,16 @@ Note: points and scribbles for pascal are downloaded from [TEL](https://github.c
     └── resnet101.pth
 ```
 
+### Usage
+train
+```bash 
+sh scripts/train_voc.sh <num_gpu> <port>
+```
+eval
+```bash 
+python eval.py
+```
+
 ## Citation ✏️ 📄
 If you find this repo useful for your research, please consider citing the paper as follows:
 ```
