@@ -12,6 +12,7 @@ class. Inspired by this, we propose a novel SASS framework, which is equipped wi
 - Pascal: [JPEGImages](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/VOCtrainval_11-May-2012.tar) | [SegmentationClass](https://drive.google.com/file/d/1ikrDlsai5QSf2GiSUR3f8PZUzyTubcuF/view?usp=sharing)
 - Cityscapes: [leftImg8bit](https://www.cityscapes-dataset.com/file-handling/?packageID=3) | [gtFine](https://drive.google.com/file/d/1E_27g9tuHm6baBqcA7jct_jqcGA89QPm/view?usp=sharing)
 
+```
 ├── [Your Pascal Path]
     ├── JPEGImages
     └── SegmentationClass
@@ -19,6 +20,8 @@ class. Inspired by this, we propose a novel SASS framework, which is equipped wi
 ├── [Your Cityscapes Path]
     ├── leftImg8bit
     └── gtFine
+    
+```
 ### Pretrained Backbone:
 [ResNet-50](https://drive.google.com/file/d/1mqUrqFvTQ0k5QEotk4oiOFyP6B9dVZXS/view?usp=sharing) | [ResNet-101](https://drive.google.com/file/d/1Rx0legsMolCWENpfvE2jUScT3ogalMO8/view?usp=sharing)
 ```
