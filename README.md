@@ -20,6 +20,7 @@ class. Inspired by this, we propose a novel SASS framework, which is equipped wi
     ├── leftImg8bit
     └── gtFine
 ### Pretrained Backbone:
+[ResNet-50](https://drive.google.com/file/d/1mqUrqFvTQ0k5QEotk4oiOFyP6B9dVZXS/view?usp=sharing) | [ResNet-101](https://drive.google.com/file/d/1Rx0legsMolCWENpfvE2jUScT3ogalMO8/view?usp=sharing)
 ```
 ├── ./pretrained
     ├── resnet50.pth
