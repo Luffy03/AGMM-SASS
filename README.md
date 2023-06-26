@@ -20,7 +20,6 @@ class. Inspired by this, we propose a novel SASS framework, which is equipped wi
 ├── [Your Cityscapes Path]
     ├── leftImg8bit
     └── gtFine
-    
 ```
 ### Pretrained Backbone:
 [ResNet-50](https://drive.google.com/file/d/1mqUrqFvTQ0k5QEotk4oiOFyP6B9dVZXS/view?usp=sharing) | [ResNet-101](https://drive.google.com/file/d/1Rx0legsMolCWENpfvE2jUScT3ogalMO8/view?usp=sharing)
@@ -28,6 +27,7 @@ class. Inspired by this, we propose a novel SASS framework, which is equipped wi
 ├── ./pretrained
     ├── resnet50.pth
     └── resnet101.pth
+```
 
 ## Citation ✏️ 📄
 If you find this repo useful for your research, please consider citing the paper as follows:
