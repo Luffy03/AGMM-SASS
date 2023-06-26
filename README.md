@@ -20,6 +20,8 @@ Note: points and scribbles for pascal are downloaded from [TEL](https://github.c
 ```
 ├── [Your Pascal Path]
     ├── JPEGImages
+    ├── point
+    ├── scribble
     └── SegmentationClass
     
 ├── [Your Cityscapes Path]
