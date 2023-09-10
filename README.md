@@ -61,5 +61,14 @@ If you find this repo useful for your research, please consider citing the paper
   year={2023},
   pages={15454-15464}
   }
+@ARTICLE{Wu_DBFNet,
+  author={Wu, Linshan and Fang, Leyuan and Yue, Jun and Zhang, Bob and Ghamisi, Pedram and He, Min},
+  journal={IEEE Transactions on Image Processing}, 
+  title={Deep Bilateral Filtering Network for Point-Supervised Semantic Segmentation in Remote Sensing Images}, 
+  year={2022},
+  volume={31},
+  number={},
+  pages={7419-7434},
+  doi={10.1109/TIP.2022.3222904}}
 ```
 
