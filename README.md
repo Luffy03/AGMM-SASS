@@ -53,6 +53,12 @@ python eval.py
 ## Citation ✏️ 📄
 If you find this repo useful for your research, please consider citing the paper as follows:
 ```
+@article{wu2024modeling,
+  title={Modeling the Label Distributions for Weakly-Supervised Semantic Segmentation},
+  author={Wu, Linshan and Zhong, Zhun and Ma, Jiayi and Wei, Yunchao and Chen, Hao and Fang, Leyuan and Li, Shutao},
+  journal={arXiv preprint arXiv:2403.13225},
+  year={2024}
+}
 @inproceedings{AGMM,
   title={Sparsely Annotated Semantic Segmentation with Adaptive Gaussian Mixtures},
   author={Wu, Linshan and Zhong, Zhun and Fang, Leyuan and He, Xingxin and Liu, Qiang and Ma, Jiayi and Chen, Hao},
